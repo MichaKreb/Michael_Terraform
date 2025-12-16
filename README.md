@@ -121,4 +121,4 @@ terraform fmt
 5 directories, 14 files
 ```
 #Diagram
-![Terraform Project Architecture](terraform_project.png)
+![Terraform Project Architecture](Terraform_project.png)
