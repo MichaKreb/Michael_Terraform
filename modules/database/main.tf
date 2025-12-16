@@ -23,14 +23,7 @@ resource "aws_db_subnet_group" "db_subnet" {
     Name = "db-subnet-group"
   }
 }
-resource "aws_db_subnet_group" "db_subnet" {
-  name       = "db-subnet-group"
-  subnet_ids = [aws_subnet.private.id]
 
-  tags = {
-    Name = "db-subnet-group"
-  }
-}
 resource "aws_db_instance" "postgres" {
   identifier        = "my-postgres"
   engine            = "postgres"
