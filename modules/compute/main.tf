@@ -10,11 +10,11 @@ resource "aws_security_group" "ec2_sg" {
 resource "aws_vpc_security_group_egress_rule" "all_out" {
   security_group_id = aws_security_group.ec2_sg.id
   cidr_ipv4         = "0.0.0.0/0"
-  ip_protocol       = "-1" # -1 = alles erlauben
+  ip_protocol       = "-1" # -1 = all allowed
 }
 resource "aws_vpc_security_group_ingress_rule" "ssh" {
   security_group_id = aws_security_group.ec2_sg.id
-  cidr_ipv4         = "0.0.0.0/0" #oder deine eigene IP später
+  cidr_ipv4         = "0.0.0.0/0" #or own ip
   from_port         = 22
   to_port           = 22
   ip_protocol       = "tcp"

@@ -13,7 +13,7 @@ variable "app_instance_name" {
 variable "ami_id" {
   type        = string
   description = "AMI ID für EC2"
-  default     = "ami-123456789" # oder dein data.aws_ami.ubuntu.id später
+  default     = "ami-123456789"
 }
 
 variable "s3_bucket_name" {
