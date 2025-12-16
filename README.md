@@ -119,6 +119,6 @@ terraform fmt
 └── variables.tf
 
 5 directories, 14 files
-
+```
 #Diagram
 ![Terraform Project Architecture](terraform_project.png)
